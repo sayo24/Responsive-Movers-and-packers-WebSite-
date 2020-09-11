@@ -1,0 +1,213 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Contact Page</title>
+    <link rel="stylesheet" type="text/css" href="movingcss/moving.css">
+    <link rel="stylesheet" 
+href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    
+    <body>
+       
+    <header class="header" id="myHeader">
+<div class="header1">
+<img src="images/moving.png" alt="moving.png" class="logom" />
+</div>    
+<nav>
+      <div class="uh" id="uhu">
+        
+
+                   <select onchange="location = this.value;">
+  <option value="Navigate to">Navigate to</option>
+  <option value="moving.html">Home</option>
+  <option value="aboutuspage.html">About</option>
+  <option value="storagepage.html">Storage</option>
+<option value="packingpage.html">Packing</option>
+<option value="contactpage.html">Contacts</option>
+</select></div>
+    
+    <ul>
+        <li><a href="moving.html" class="o" id="mru" >Home</a></li>
+        <li><a href="aboutuspage.html" class="o">About</a></li>
+        <li><a href="#" class="o">Contacts</a></li>
+        <li><a href="storagepage.html" class="o">Storage</a></li>
+        <li><a href="packingpage.html" class="o">Packing</a></li>
+       
+    </ul>
+</nav>
+</header>
+    
+    
+    
+   
+ <div id="googleMap"></div>
+
+<script>
+function myMap() {
+var mapProp= {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:5,
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
+
+
+
+<div class="row31">
+  <div class="column31 left31"> 
+       <p id="adpara1">Address</p>
+    <p>Curabitur id sapien eu dolor commodo ultricies vel et ante. Fusce sollicitudin malesuada faucibus.</p>
+<p id="adpara2">9870 St Vincent Place,
+Glasgow, DC 45 Fr 45.</p>
+<p>Freephone:  +1 800 559 6580<br>
+Telephone:  +1 800 603 6035<br>
+    FAX:        +1 800 889 9898<br>
+      E-mail:<a href="gmail.com" style="color: darkturquoise">mail@demolink.org</a> </p> 
+  </div>
+    
+    
+    
+  <div class="column31 right31">
+       <p id="adpara1">Contact form</p>
+     <form action="/action_page.php">
+    
+    <input type="text1" id="fname" name="firstname" placeholder="Name:*"><br>
+
+
+    <input type="text1" id="email" name="email" placeholder="Email:*">
+
+    
+   <input type="text1" id="phone" name="phone" placeholder="Phone:*"><br>
+
+   
+    <textarea id="subject" name="subject" placeholder="Meassage" style="height:200px"></textarea><br><br>
+
+    <button id="submitbtn">SUBMIT</button>
+  </form>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row6">
+  <div id="c1" class="f1">
+      <h2 class="footerpara"><center>Get in touch</center></h2>
+
+    <center>8901 Marmora Road
+        Glasgow, DO4 89GR.<br>
+        Freephone: +1 800 559 6580<br>
+        Telephone: +1 959 603 6035<br>
+        FAX:  + 1 504 889 9898<br>
+        E-mail:<a id="dec" href="gmail.com" style="color: white;">mail@demolink.org</a></center>
+</div>
+  
+  <div id="c2" class="f2">
+      <h2 class="footerpara"><center>Menu</center></h2>
+
+  <p class="cent"><a href="aboutuspage.html" style="color: 
+
+white;" id="dec">About</a></p>
+        <p class="cent"><a id="dec" href="packingpage.html" style="color: 
+
+white;">Packing</a></p>
+        <p class="cent"><a id="dec" href="storagepage.html" style="color: 
+
+white;">Storage</a></p>
+   
+        <p class="cent"><a id="dec" href="contactpage.html" style="color: 
+
+white;">Contacts</a></p>
+    </div>
+    <div id="c3" class="f3">
+        <h2 class="footerpara"><center>Follow us</center></h2>
+        
+  <div class="cent123">
+      <a href="https://accounts.google.com/signin/v2/identifier?hl=EN&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="icon" ><i class="fa fa-google-plus" aria-hidden="true"></i></a>&nbsp;
+      <a href="https://twitter.com/login" class="icon"><i class="fa fa-twitter twitter" aria-hidden="true"></i></a>&nbsp;
+                <a href="https://en-gb.facebook.com/login/" class="icon"><i class="fa fa-facebook facebook" aria-hidden="true"></i></a>&nbsp;
+                <a href="https://in.pinterest.com/login/" class="icon"><i class="fa fa-pinterest pininterest" aria-hidden="true"></i></a>&nbsp;   
+                <a href="https://in.linkedin.com/" class="icon"><i class="fa fa-linkedin linked" aria-hidden="true"></i></a>
+            </div>
+    </div>
+    <div id="c4" class="f4">
+        <h2 class="footerpara"><center>Join our newsletter</center></h2>
+    <p class="cent" style="color: white">And always stay informed of the latest company news 
+
+and events!</p> 
+     &nbsp; &nbsp;<button class="btn"><b>Sign Up</b></button> 
+        </div>
+    </div> 
+    
+    <div class="copyr">
+        &copy;2015 MOVING CO. All rights reserved. <a href="privacy" id="privacy">Privacy policy</a><br><br>
+    </div>
+
+           <script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+               
+</script>  
+        <script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("uhu");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+       
+    </body>
+
+</html>

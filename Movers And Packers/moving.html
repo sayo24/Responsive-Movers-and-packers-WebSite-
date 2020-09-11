@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="movingcss/moving.css">
+<link rel="stylesheet" 
+href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>   
+    
+    
+    <header>
+<div class="header1">
+<img src="images/moving.png" alt="moving.png" class="logom" />
+</div>    
+<nav>
+      <div class="uh" id="uhu">
+        
+
+                   <select onchange="location = this.value;">
+  <option value="Navigate to">Navigate to</option>
+  <option value="moving.html">Home</option>
+  <option value="aboutuspage.html">About</option>
+  <option value="storagepage.html">Storage</option>
+<option value="packingpage.html">Packing</option>
+<option value="contactpage.html">Contacts</option>
+</select></div>
+    
+    <ul>
+        <li><a href="moving.html" class="o" id="mru" >Home</a></li>
+        <li><a href="aboutuspage.html" class="o">About</a></li>
+        <li><a href="storagepage.html" class="o">Storage</a></li>
+        <li><a href="packingpage.html" class="o">Packing</a></li>
+         <li><a href="contactpage.html" class="o">Contacts</a></li>
+       
+    </ul>
+</nav>
+</header>
+    
+  
+   <div class=" mm">
+
+<div class="mySlides fade" style="width:100%">
+  <img src="images/slide_01.jpg" style="width:100%;height: 500px;">
+  <div class="text" id="t">Making your move least painful</div>
+</div>
+
+<div class="mySlides fade" style="width:100%">
+  <img src="images/slide_02.jpg" style="width:100%;height: 500px;">
+  <div class="text" id="t">Moving made easy!</div>
+</div>
+    <div class="textdot" id="t" style="text-align:center;">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span>  
+</div>
+</div>
+<br>
+
+
+<script>    
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+
+    
+    
+    
+    <br>
+    
+    
+     <h1 class="para3"><center>Organize Your Move</center></h1>
+<div class="row1">
+  <div class="column1" id="c1">
+    <a href="images/shifting3.jpg" target="_blank"><img src="images/shifting3.jpg" id="image_1" class="zoom"></a> 
+      <h3 class="para1">Consectetuer adipiscing elit</h3>
+      <p class="para2">Lorem ipsum dolor sit amet, consectetuer adscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta.</p>
+  </div>
+  <div class="column1">
+   <a href="images/shifting2.jpg" target="_blank"><img src="images/shifting2.jpg" id="image_2" class="zoom"></a>  
+    <h3 class="para1">Consectetuer adipiscing elit</h3>
+    <p class="para2">Lorem ipsum dolor sit amet, consectetuer adscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta.</p>
+  </div>
+  <div class="column1" id="c3">  
+    <a href="images/shifting1.jpg" target="_blank"><img src="images/shifting1.jpg" id="image_3" class="zoom"></a>  
+   <h3 class="para1">Consectetuer adipiscing elit</h3>
+    <p class="para12">Lorem ipsum dolor sit amet, consectetuer adscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta.</p>
+  </div>
+</div>   
+    
+    
+    
+    
+    
+    
+    
+    <div class="row2">
+  <div class="column2 left2">
+    <img src="images/image5.jpg" id="image_4" height="100%" width="500">
+  </div>
+  <div class="column2 right2">
+    <h1 class="para3">What we do</h1>
+<p>
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit.</p>
+        <a href="learnmore.html"><button class="btn"><b>Learn More</b></button></a>
+  </div>
+</div>
+    
+    
+
+    
+    
+    
+    
+<div class="row">
+  <div class="column">
+   <h1 class="para3">Videos of our clients</h1>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit.</p>
+     <button class="btn btnview">View All Videos</button>
+  </div>
+  <div class="column">
+    <iframe width="530px" height="370" id="iframev"  src="https://www.youtube.com/embed/M6pDjSwxPiY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+</div>
+    
+    
+    
+
+    
+    <h1 id="col3" class="para3"><center>News</center></h1>
+<div class="row3">
+  <div class="column3" >
+    <img src="images/colorlogo.jpg" class="datelogo"  height="100px" width="70%">  
+      <h3 class="para_a1">Consectetuer adipiscing elit</h3>
+      <p class="para_a2">Lorem ipsum dolor sit amet, consectetuer adscing elit. Praesent vestibulum molestie lacus. Aeneannonuhendrerit mauris. Phasellus poum sociis natoque penatibs et magnis dis parturient montes, nascetur ridiculus mus. Nulla dsce feugiat malesuada odio.</p>
+        <a href="learnmore.html"><button class="btn">Learn More</button></a>
+  </div>
+  <div class="column3">
+  <img src="images/colorlogo.jpg" class="datelogo"  height="100px" width="70%">  
+      <h3 class="para_a1">Consectetuer adipiscing elit</h3>
+      <p class="para_a2">Lorem ipsum dolor sit amet, consectetuer adscing elit. Praesent vestibulum molestie lacus. Aeneannonuhendrerit mauris. Phasellus poum sociis natoque penatibs et magnis dis parturient montes, nascetur ridiculus mus. Nulla dsce feugiat malesuada odio.</p>
+        <a href="learnmore.html"><button class="btn">Learn More</button></a>
+  </div>
+  <div class="column3">  
+      <img src="images/colorlogo.jpg" class="datelogo"  height="100px" width="70%">  
+      <h3 class="para_a1">Consectetuer adipiscing elit</h3>
+      <p class="para_a2">Lorem ipsum dolor sit amet, consectetuer adscing elit. Praesent vestibulum molestie lacus. Aeneannonuhendrerit mauris. Phasellus poum sociis natoque penatibs et magnis dis parturient montes, nascetur ridiculus mus. Nulla dsce feugiat malesuada odio.</p>
+        <a href="learnmore.html"><button class="btn">Learn More</button></a>
+  </div>
+</div>     
+    
+    
+    
+    
+     <div class="news">
+<h1 class="gallerymargin para3"><center>Gallery</center></h1>
+         
+         
+     <div class="row4">
+         
+  <div class="column4">
+   <a href="images/slide_02.jpg" target="_blank"><img src="images/slide_02.jpg" alt="slide2" class="image_a1"></a>
+  </div>
+         
+         
+  <div class="column4">
+  <a href="images/slide_02.jpg" target="_blank"><img src="images/slide_01.jpg" alt="slide2" class="image_a2"></a>
+  </div>
+         
+  <div class="column4">  
+      <a href="images/slide_02.jpg" target="_blank"><img src="images/slide_01.jpg" alt="slide2" class="image_a3"></a>
+  </div>
+         
+</div>  <br><br>
+        
+         
+       <div class="row4">
+         
+  <div class="column4">
+   <a href="images/slide_02.jpg" target="_blank"><img src="images/slide_02.jpg" alt="slide2" class="image_a1"></a>
+  </div>
+         
+         
+  <div class="column4">
+  <a href="images/slide_02.jpg" target="_blank"><img src="images/slide_01.jpg" alt="slide2" class="image_a2"></a>
+  </div>
+         
+  <div class="column4">  
+      <a href="images/slide_02.jpg" target="_blank"><img src="images/slide_01.jpg" alt="slide2" class="image_a3"></a>
+  </div>
+           
+         
+</div>   <br><br><br><br><br>  
+         
+    </div> 
+    
+    
+    
+    
+    
+    
+    
+ <div class="row6">
+  <div id="c1" class="f1">
+      <h2 class="footerpara"><center>Get in touch</center></h2>
+
+    <center>8901 Marmora Road
+        Glasgow, DO4 89GR.<br>
+        Freephone: +1 800 559 6580<br>
+        Telephone: +1 959 603 6035<br>
+        FAX:  + 1 504 889 9898<br>
+        E-mail:<a id="dec" href="gmail.com" style="color: white;">mail@demolink.org</a></center>
+</div>
+  
+  <div id="c2" class="f2">
+      <h2 class="footerpara"><center>Menu</center></h2>
+
+  <p class="cent"><a href="aboutuspage.html" style="color: 
+
+white;" id="dec">About</a></p>
+        <p class="cent"><a id="dec" href="packingpage.html" style="color: 
+
+white;">Packing</a></p>
+        <p class="cent"><a id="dec" href="storagepage.html" style="color: 
+
+white;">Storage</a></p>
+   
+        <p class="cent"><a id="dec" href="contactpage.html" style="color: 
+
+white;">Contacts</a></p>
+    </div>
+    <div id="c3" class="f3">
+        <h2 class="footerpara"><center>Follow us</center></h2>
+        
+  <div class="cent123">
+      <a href="https://accounts.google.com/signin/v2/identifier?hl=EN&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="icon" ><i class="fa fa-google-plus" aria-hidden="true"></i></a>&nbsp;&nbsp;
+      <a href="https://twitter.com/login" class="icon"><i class="fa fa-twitter twitter" aria-hidden="true"></i></a>&nbsp;
+                <a href="https://en-gb.facebook.com/login/" class="icon"><i class="fa fa-facebook facebook" aria-hidden="true"></i></a>&nbsp;
+                <a href="https://in.pinterest.com/login/" class="icon"><i class="fa fa-pinterest pininterest" aria-hidden="true"></i></a>&nbsp;   
+                <a href="https://in.linkedin.com/" class="icon"><i class="fa fa-linkedin linked" aria-hidden="true"></i></a>
+            </div>
+    </div>
+    <div id="c4" class="f4">
+        <h2 class="footerpara"><center>Join our newsletter</center></h2>
+    <p class="cent" style="color: white">And always stay informed of the latest company news 
+
+and events!</p> 
+    &nbsp; &nbsp;<button class="btn"><b>Sign Up</b></button> 
+        </div>
+    </div> 
+    
+    <div class="copyr">
+        &copy;2015 MOVING CO. All rights reserved. <a href="privacy" id="privacy">Privacy policy</a><br><br>
+    </div>
+        
+    
+</body>
+</html>

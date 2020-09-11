@@ -1,0 +1,114 @@
+/*************** HTML CODE******************************/
+<div id="navigation" class="topnav">
+            <div id="navbar">
+        <nav >
+            <a href="#" id="menu-acces" class="menu_a"><i class="fa fa-bars fa-2x"></i></a>
+            <ul class="menu_open navbar_ul">
+                <li><a class="a_nav" href="dance_home.html">HOME</a></li>
+                 <li class="menu"><a class="a_nav" href="dance_about.html">ABOUT<!--<i class="fa fa-caret-down" style="color:black"></i>--></a>
+                 <div class='sub'>
+                     <ul class='sub-options'>
+                         <li><a class="a1" href='#'>History</a></li>
+                         <li><a class="a1" href='#'>Staff</a></li>
+                         <li><a class="a1" href='#'>Dress Code</a></li>
+                         <li><a class="a1" href='#'>Contemporary</a></li>
+                     </ul>
+                    </div>
+                </li>
+                <3li><a class="a_nav" href="d_classes.html">CLASSES</a></li>
+                <li><a class="a_nav" href="d_gallery.html">GALLERY</a></li>
+                <li class="menu1"><a class="a_nav" href="d_training_program.html">TRAINING PROGRAM</a>
+                <!-- <div class='sub1'>
+                     <ul class='sub-options'>
+                         <li><a class="a1" href='#'>Summer Professional</a></li>
+                         <li><a class="a1" href='#'>BDC Program</a></li>
+                         <li><a class="a1" href='#'>Teen Training</a></li>
+                         <li><a class="a1" href='#'>Junior Training</a></li>
+                     </ul>
+                    </div>-->
+                </li>
+                <li class="menu3"><a class="a_nav" href="blog.html">BLOG</a>
+                 <div class='sub3'>
+                     <ul class='sub-options'>
+                         <li><a class="a1" href='#'>Blog</a></li>
+                         <li><a class="a1" href='#'>Modern Blog</a></li>
+                         <li><a class="a1" href='#'>Single Post</a></li>
+                     </ul>
+                    </div>
+                </li>
+                <li><a class="a_nav" href="#">PAGES</a></li>
+                <li><a class="a_nav" href="contact.html">CONTACTS</a></li>
+               <!--  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>-->
+            </ul>
+            
+        </nav>
+            </div>
+            <div id="search">
+                <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+            </div>
+            <div id="shopping">
+                <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+            </div>
+            </div>
+
+<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  responsive_menu = $('.navbar_ul');
+  $('#menu-acces').on('click', function(e) {
+    e.preventDefault();
+    responsive_menu.slideToggle();
+  });
+  $(window).resize(function(){
+    var obtener_ancho = $(this).width();
+    if(obtener_ancho > 480 && responsive_menu.is(':hidden')) {
+      responsive_menu.removeAttr('style');
+    }
+  });
+  $('nav li').on('click', function(e) {               
+    var obtener_ancho = $(window).width();
+    if(obtener_ancho < 480 ) {
+      responsive_menu.slideToggle();
+    }
+  });
+
+});
+</script>
+    
+
+
+/************************************* Ham_Menu*********************************************************/
+#menu-acces {
+  display: none;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  text-decoration-line: none;
+color: black;
+}
+
+@media only screen and (max-width: 768px) {
+#menu-acces { display: block; }
+.navbar_ul { display: none; }
+.menu_li {
+  width: 100%;
+  position: relative;
+  opacity: 1;
+}
+.menu_open { height: auto; }
+
+}
+
+@media only screen and (max-width: 992px) {
+#menu-acces { display: block; }
+.navbar_ul { display: none; }
+.menu_li {
+  width: 100%;
+  position: relative;
+  opacity: 1;
+}
+.menu_open { height: auto; }
+
+}
+
